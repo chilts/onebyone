@@ -1,0 +1,44 @@
+{
+  "name": "onebyone",
+  "description": "Flow control so that only one function executes at any one time.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Andrew Chilton",
+    "email": "chilts@appsattic.com",
+    "url": "http://www.chilts.org/"
+  },
+  "homepage": "https://github.com/appsattic/onebyone",
+  "contributors": [],
+  "devDependencies": {
+    "tap": ">= 0.2.5"
+  },
+  "dependencies": {},
+  "main": "onebyone.js",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/appsattic/onebyone.git"
+  },
+  "bugs": {
+    "url": "http://github.com/appsattic/onebyone/issues",
+    "mail": "chilts@appsattic.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "keywords": [
+    "function",
+    "linear",
+    "control flow",
+    "flow",
+    "sequence"
+  ],
+  "scripts": {
+    "test": "tap test/"
+  }
+}
