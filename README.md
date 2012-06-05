@@ -16,9 +16,9 @@ onebyone - Flow control so that only one function executes at any one time.
 
 ## Synopsis ##
 
-Like async.series but you can keep adding functions to it.
+Like async.series() but you can keep adding functions to it.
 
-Gives you an object (like a queue) into which you can push functions and each will only ever run in series, never
+Gives you an object (like a queue) into which you can add functions and each will only ever run in series, never
 concurrently, and only one at a time. Also gives you your result immediately, rather than at the end of the series.
 
 ## Example ##
@@ -39,10 +39,10 @@ var two = function(callback) {
 };
 
 console.log('Setting up tasks : ' + (new Date()).toISOString());
-onebyone.add(one, function() {
+onebyone.add(one, function(err, data) {
     console.log('One has finished : ' + (new Date()).toISOString());
 });
-onebyone.add(two, function() {
+onebyone.add(two, function(err, data) {
     console.log('Two has finished : ' + (new Date()).toISOString());
 });
 ```
